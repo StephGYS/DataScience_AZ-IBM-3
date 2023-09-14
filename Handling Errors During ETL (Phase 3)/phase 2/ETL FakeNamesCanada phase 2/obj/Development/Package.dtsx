@@ -1,0 +1,894 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/7/2023 6:40:53 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-7BCMEF4U"
+  DTS:CreatorName="LAPTOP-7BCMEF4U\Strange"
+  DTS:DTSID="{96ACA3B4-DCA7-4AAD-BD3C-E4F4BF5F25AF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{03A03592-ED5C-4C0C-8883-594FB2AEECE8}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FakeNamesCanada.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{38F89209-B812-42C0-A658-2F2B4C3C7519}"
+      DTS:ObjectName="FakeNamesCanada.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\gnago\Desktop\IBM data science AZ\Data Prep\Handling Errors During ETL (Phase 3)\3. Uploaded Data\FakeNamesCanada.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{F1BD89B3-4D5F-4390-BF34-914AD509AEFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{A6D6C805-B421-4131-AFDE-3648E5FFB885}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GivenName"
+              DTS:DTSID="{45EF1861-F9C1-4DDF-86D9-D278752B19AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{1504F621-6EE6-4CC9-A472-54FD0B42B315}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StreetAddress"
+              DTS:DTSID="{6EDE74A0-D33B-46C0-AD02-0238DAB3D9CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{D0E507CB-7468-4C35-8073-8C8E7902B923}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{BBD23523-86F0-4729-8BE9-13342B8DBDB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryFull"
+              DTS:DTSID="{BD838086-6EE9-4371-BDC0-71C286EC8669}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{DA4C2221-4CE5-4144-B5C2-EC3D8FF7AC68}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Balance"
+              DTS:DTSID="{1BD309C1-F97E-43B4-A1CC-2439CCBD2D25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="3000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InterestRate"
+              DTS:DTSID="{BB28A711-5F43-449C-AB74-82C0824F366A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{777FAAAE-57E5-48A4-80CA-E7A0764ECE82}"
+      DTS:ObjectName="LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-7BCMEF4U\SQLEXPRESS;Initial Catalog=DSTRAINING;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FakeNamesCanada"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{4821E1AE-E2C6-4ED9-9068-7A461189D71C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FakeNamesCanada"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\FakeNamesCanada\Destination OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="Destination OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[RAW_FakeNamesCanada]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FakeNamesCanada\Destination OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-7BCMEF4U\SQLEXPRESS.DSTRAINING]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Number"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Number]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[GivenName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="GivenName"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[GivenName]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GivenName]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Surname]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[StreetAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="StreetAddress"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[StreetAddress]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[StreetAddress]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[City]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[City]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ZipCode]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[CountryFull]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="CountryFull"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CountryFull]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CountryFull]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Birthday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Balance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="Balance"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Balance]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Balance]" />
+                    <inputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[InterestRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3000"
+                      cachedName="InterestRate"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InterestRate]"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InterestRate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[RowNumber]"
+                      dataType="i4"
+                      name="RowNumber" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[GivenName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="GivenName" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[StreetAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="StreetAddress" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[CountryFull]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CountryFull" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Balance" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InterestRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="InterestRate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FakeNamesCanada\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FakeNamesCanada\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FakeNamesCanada\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FakeNamesCanada\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="1036"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FakeNamesCanada\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FakeNamesCanada.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[FakeNamesCanada.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Number]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Number]"
+                      name="Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GivenName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[GivenName]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GivenName]"
+                      name="GivenName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Surname]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Surname]"
+                      name="Surname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[StreetAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[StreetAddress]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[StreetAddress]"
+                      name="StreetAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[City]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ZipCode]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ZipCode]"
+                      name="ZipCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CountryFull]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CountryFull]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[CountryFull]"
+                      name="CountryFull"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthday]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthday]"
+                      name="Birthday"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Balance]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Balance]"
+                      name="Balance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InterestRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InterestRate]"
+                      length="3000"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InterestRate]"
+                      name="InterestRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[GivenName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="GivenName" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[StreetAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="StreetAddress" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[CountryFull]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="CountryFull" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="Balance" />
+                    <externalMetadataColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InterestRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3000"
+                      name="InterestRate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\FakeNamesCanada.Paths[Sortie de source de fichier plat]"
+              endId="Package\FakeNamesCanada\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+              name="Sortie de source de fichier plat"
+              startId="Package\FakeNamesCanada\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="sql12">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\FakeNamesCanada"
+          TopLeft="63,46" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\FakeNamesCanada">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\FakeNamesCanada\Source du fichier plat"
+          TopLeft="103,77" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\FakeNamesCanada\Destination OLE DB"
+          TopLeft="390,243" />
+        <EdgeLayout
+          Id="Package\FakeNamesCanada.Paths[Sortie de source de fichier plat]"
+          TopLeft="192.5,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="283,124"
+              Start="0,0"
+              End="283,116.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,58"
+                    Point2="0,62"
+                    Point3="4,62" />
+                  <mssgle:LineSegment
+                    End="279,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="279,62"
+                    Point2="283,62"
+                    Point3="283,66" />
+                  <mssgle:LineSegment
+                    End="283,116.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\FakeNamesCanada\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
